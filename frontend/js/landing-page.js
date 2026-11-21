@@ -1,4 +1,4 @@
-/* MAGUVA — "The Drape" motion
+/* ZARNIKA — "The Drape" motion
    Verified values carried from the motion fix: ScrollSmoother smooth:1,
    normalizeScroll:true, ignoreMobileResize:true, anticipatePin:1,
    transform/opacity-only animation, IO-gated off-screen pauses. */
@@ -16,8 +16,8 @@
   window.addEventListener("load", function () { setTimeout(killLoader, 350); });
   setTimeout(killLoader, 2600);
 
-  /* ---------- live open status (IST vs 10:30–21:15) ---------- */
-  var OPEN_MIN = 10 * 60 + 30, CLOSE_MIN = 21 * 60 + 15;
+  /* ---------- live open status (IST vs 10:00–20:30) ---------- */
+  var OPEN_MIN = 10 * 60, CLOSE_MIN = 20 * 60 + 30;
   function istMinutes() {
     try {
       var parts = new Intl.DateTimeFormat("en-GB", {
@@ -33,10 +33,10 @@
   }
   function updateStatus() {
     var now = istMinutes(), open, text;
-    if (now < 0) { text = "Open daily 10:30 AM – 9:15 PM"; open = true; }
-    else if (now >= OPEN_MIN && now < CLOSE_MIN) { open = true; text = "Open now · closes 9:15 PM"; }
-    else if (now < OPEN_MIN) { open = false; text = "Opens today at 10:30 AM"; }
-    else { open = false; text = "Opens tomorrow at 10:30 AM"; }
+    if (now < 0) { text = "Open daily 10:00 AM – 8:30 PM"; open = true; }
+    else if (now >= OPEN_MIN && now < CLOSE_MIN) { open = true; text = "Open now · closes 8:30 PM"; }
+    else if (now < OPEN_MIN) { open = false; text = "Opens today at 10:00 AM"; }
+    else { open = false; text = "Opens tomorrow at 10:00 AM"; }
     document.querySelectorAll(".js-status-text").forEach(function (el) { el.textContent = text; });
     document.querySelectorAll(".js-status-dot").forEach(function (el) {
       el.classList.toggle("is-open", open);

@@ -1,6 +1,6 @@
-# MAGUVA — website
+# ZARNIKA — website
 
-One-page website for **MAGUVA** (women's ethnic wear, Kukatpally, Hyderabad — since 1999).
+One-page website for **ZARNIKA** (women's ethnic wear, Weaver's Row, Nandipur — since 2011).
 Plain HTML, CSS and JavaScript. No build step, nothing to install.
 
 ## Folder map
@@ -35,7 +35,7 @@ The site root is this folder (`pages_build_output_dir = "."` in `wrangler.toml`)
 so it deploys as-is:
 
 ```
-npx wrangler pages deploy . --project-name maguva
+npx wrangler pages deploy . --project-name zarnika
 ```
 
 It is also live on GitHub Pages from this same repo — both hosts serve the
