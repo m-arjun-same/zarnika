@@ -1,0 +1,71 @@
+/* ============================================================
+   ZARNIKA — UPGRADE: "Zari System" (additive only)
+   Extends the existing #zariThread: section knots that light as
+   the thread reaches them, a travelling halo on the thread dot,
+   a silk shimmer sweep on imagery, and drape-wave reveals.
+   No layout properties are touched — transforms/opacity/overlay
+   gradients only, so section heights stay exactly as built.
+   ============================================================ */
+
+/* ---------- thread progress: the zari pulled across the top ---------- */
+#zariProgress{
+  position:fixed;top:0;left:0;width:100%;height:3px;z-index:120;
+  pointer-events:none;transform:scaleX(0);transform-origin:0 50%;
+  background:linear-gradient(90deg,var(--gold),var(--gold-2) 55%,var(--gold-soft));
+  box-shadow:0 1px 6px rgba(240,168,104,.35);
+}
+
+/* ---------- knots on the existing thread ---------- */
+.zari-knot-dot{
+  fill:var(--maroon-deep);stroke:rgba(240,168,104,.55);stroke-width:2;
+  transition:fill .5s ease,stroke .5s ease;
+}
+.zari-knot-ring{
+  fill:none;stroke:rgba(240,168,104,0);stroke-width:1.5;
+  transition:stroke .5s ease;
+}
+.zari-knot-g.is-lit .zari-knot-dot{fill:var(--gold-2);stroke:var(--gold-soft)}
+.zari-knot-g.is-lit .zari-knot-ring{stroke:rgba(240,168,104,.75)}
+
+/* halo that travels with the existing #zariDot */
+#zariHalo{
+  fill:none;stroke:rgba(240,168,104,.55);stroke-width:1.5;pointer-events:none;
+  animation:zariHaloPulse 2.2s ease-out infinite;
+}
+@keyframes zariHaloPulse{
+  0%{opacity:.75}70%{opacity:0}100%{opacity:0}
+}
+
+/* ---------- silk shimmer: a light sweep across the cloth ---------- */
+.chapter-media::after,.story-media::after{
+  content:"";position:absolute;inset:-14%;z-index:2;pointer-events:none;
+  background:linear-gradient(105deg,
+    transparent 42%,rgba(255,217,174,.14) 47%,rgba(240,168,104,.32) 50%,
+    rgba(255,217,174,.14) 53%,transparent 58%);
+  transform:translateX(-135%) skewX(-6deg);
+}
+.chapter-media.zari-lit::after,.story-media.zari-lit::after{
+  animation:zariSheen 1.9s cubic-bezier(.4,0,.2,1) .1s 1 both;
+}
+@keyframes zariSheen{
+  to{transform:translateX(135%) skewX(-6deg)}
+}
+
+/* ---------- drape-wave reveals: items settle like a falling fold ---------- */
+.zari-wave-item{
+  opacity:0;transform:translateY(18px) rotate(.6deg);
+  will-change:transform,opacity;
+}
+.zari-waved .zari-wave-item{
+  opacity:1;transform:translateY(0) rotate(0deg);
+  transition:opacity .7s ease,transform .75s cubic-bezier(.22,1,.36,1);
+}
+
+/* ---------- reduced motion: everything present, nothing moves ---------- */
+@media (prefers-reduced-motion: reduce){
+  #zariProgress{display:none}
+  #zariHalo{animation:none;opacity:0}
+  .chapter-media::after,.story-media::after{display:none}
+  .zari-wave-item{opacity:1;transform:none}
+  .zari-knot-dot,.zari-knot-ring{transition:none}
+}
