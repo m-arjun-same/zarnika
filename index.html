@@ -10,6 +10,7 @@
 <link rel="preload" href="assets/images/hero-1.jpg" as="image">
 <link rel="stylesheet" href="frontend/css/landing-page.css">
 <link rel="stylesheet" href="frontend/css/upgrade.css">
+<link rel="stylesheet" href="frontend/css/tail.css?v=1">
 </head>
 <body>
 
@@ -176,109 +177,130 @@
   </article>
 </section>
 
-<!-- ================= SINCE 2011 ================= -->
-<section class="story zari-edge" id="story">
-  <div class="story-media fold-media">
-    <img src="assets/images/store.jpg" alt="A drape being fitted and arranged on a customer inside the store" loading="lazy" decoding="async">
-  </div>
-  <div class="story-core">
-    <p class="eyebrow">The store</p>
-    <h2 class="split">Draping Nandipur<br>since 2011</h2>
-    <p class="story-text">Zarnika opened on Loomlight Avenue in 2011. More than a decade later, guests still describe it the same way — <em>&ldquo;a house where every drape is opened in full before it is chosen.&rdquo;</em> Sarees are still unfolded on the counter, one by one, the way they have always been shown — because a drape should be seen in full before it is chosen.</p>
-    <div class="story-stats">
-      <div class="stat"><strong>2011</strong><span>Established</span></div>
-      <div class="stat"><strong>★ 4.9</strong><span>House rating</span></div>
-      <div class="stat"><strong>1,872</strong><span>Guest notes</span></div>
-      <div class="stat"><strong>7</strong><span>Days open, every week</span></div>
+<!-- ================= JOURNEY (was SINCE 2011) — pinned horizontal unfolding ================= -->
+<section class="journey zari-edge" id="story">
+  <div class="journey-pin">
+    <div class="journey-head">
+      <p class="eyebrow">The store · Since 2011</p>
+      <h2 class="split">One drape,<br>three unfoldings</h2>
+      <p class="journey-hint" aria-hidden="true">Keep scrolling — the drape opens sideways →</p>
     </div>
+    <div class="journey-track">
+      <article class="journey-panel journey-panel-img">
+        <img src="assets/images/store.jpg" alt="A drape being fitted and arranged on a customer inside the store" loading="lazy" decoding="async">
+        <div class="journey-panel-tag"><strong>2011</strong><span>The first fold</span></div>
+      </article>
+      <article class="journey-panel">
+        <span class="journey-num" aria-hidden="true">01</span>
+        <h3>Opened on Loomlight Avenue</h3>
+        <p>Zarnika opened in 2011 on Loomlight Avenue, Weaver&rsquo;s Row — one counter, one rail of silk, and a single rule that still runs the house.</p>
+        <p class="journey-quote">&ldquo;A house where every drape is opened in full before it is chosen.&rdquo;</p>
+      </article>
+      <article class="journey-panel">
+        <span class="journey-num" aria-hidden="true">02</span>
+        <h3>Still unfolded, one by one</h3>
+        <p>More than a decade later, sarees are still unfolded on the counter, one by one, the way they have always been shown — because a drape should be seen in full before it is chosen.</p>
+        <div class="journey-stats">
+          <div class="jstat"><strong><span data-count="4.9" data-dec="1">0</span></strong><span>House rating ★</span></div>
+          <div class="jstat"><strong><span data-count="1872">0</span></strong><span>Guest notes</span></div>
+          <div class="jstat"><strong><span data-count="7">0</span></strong><span>Days open, every week</span></div>
+        </div>
+      </article>
+    </div>
+    <div class="journey-progress" aria-hidden="true"><span></span></div>
   </div>
 </section>
 
-<!-- ================= WHY ================= -->
-<section class="why" id="why">
+<!-- ================= RITUAL — how a drape is chosen ================= -->
+<section class="ritual" id="ritual">
   <div class="section-head">
-    <p class="eyebrow eyebrow-dark">Why Zarnika</p>
-    <h2 class="split">Why women<br>choose Zarnika</h2>
-    <p class="section-lede">Not our words — the words of the women who shop here, from the guest book at our counter.</p>
+    <p class="eyebrow eyebrow-dark">The counter ritual</p>
+    <h2 class="split">How a drape<br>is chosen here</h2>
+    <p class="section-lede">Four moves, in the same order, for every guest since 2011.</p>
   </div>
-  <div class="why-grid">
-    <div class="why-card fold-panel">
-      <span class="why-num" aria-hidden="true">01</span>
-      <h3>Prices that stay reasonable</h3>
-      <blockquote>&ldquo;Fair prices, written plainly on every tag.&rdquo;</blockquote>
-    </div>
-    <div class="why-card fold-panel">
-      <span class="why-num" aria-hidden="true">02</span>
-      <h3>A fit that is true</h3>
-      <blockquote>&ldquo;The blouse fit was true to the measure we gave at the counter.&rdquo;</blockquote>
-    </div>
-    <div class="why-card fold-panel">
-      <span class="why-num" aria-hidden="true">03</span>
-      <h3>A store that treats you well</h3>
-      <blockquote>&ldquo;A calm, bright store with patient staff — and all the time in the world we needed to decide.&rdquo;</blockquote>
-    </div>
-    <div class="why-card fold-panel">
-      <span class="why-num" aria-hidden="true">04</span>
-      <h3>Cloth that lasts</h3>
-      <blockquote>&ldquo;Two wedding seasons on, the silk still looks new.&rdquo;</blockquote>
-    </div>
+  <div class="ritual-line" aria-hidden="true"><span></span></div>
+  <div class="ritual-steps">
+    <article class="ritual-step"><span class="ritual-step-num">01</span><div><h3>Unfold</h3><p>The saree is opened in full on the counter — border, body and pallu, nothing kept folded away.</p></div></article>
+    <article class="ritual-step"><span class="ritual-step-num">02</span><div><h3>Drape</h3><p>It is draped the way you will wear it, so the fall, the weight and the light are judged on you — not on a shelf.</p></div></article>
+    <article class="ritual-step"><span class="ritual-step-num">03</span><div><h3>Compare</h3><p>The next one is opened beside it. And the next. There is no hurry at this counter, and no limit on folds.</p></div></article>
+    <article class="ritual-step"><span class="ritual-step-num">04</span><div><h3>Fold away</h3><p>The chosen drape is folded back along its own creases, wrapped, and carried home the same day.</p></div></article>
   </div>
 </section>
 
-<!-- ================= REVIEWS ================= -->
-<section class="reviews zari-edge" id="reviews">
+<!-- ================= WHY — chosen for ================= -->
+<section class="chosen" id="why">
+  <div class="section-head">
+    <p class="eyebrow">Why Zarnika</p>
+    <h2 class="split">Chosen for<br>four honest things</h2>
+    <p class="section-lede section-lede-light">Not our words — the words of the women who shop here, from the guest book at our counter.</p>
+  </div>
+  <div class="chosen-rows">
+    <article class="chosen-row"><span class="chosen-num">01</span><h3>Prices that stay reasonable</h3><blockquote>&ldquo;Fair prices, written plainly on every tag.&rdquo;</blockquote></article>
+    <article class="chosen-row"><span class="chosen-num">02</span><h3>A fit that is true</h3><blockquote>&ldquo;The blouse fit was true to the measure we gave at the counter.&rdquo;</blockquote></article>
+    <article class="chosen-row"><span class="chosen-num">03</span><h3>A store that treats you well</h3><blockquote>&ldquo;A calm, bright store with patient staff — and all the time in the world we needed to decide.&rdquo;</blockquote></article>
+    <article class="chosen-row"><span class="chosen-num">04</span><h3>Cloth that lasts</h3><blockquote>&ldquo;Two wedding seasons on, the silk still looks new.&rdquo;</blockquote></article>
+  </div>
+  <div class="chosen-line" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ================= GUEST BOOK — scrolling reviews ================= -->
+<section class="guestbook zari-edge" id="reviews">
   <div class="section-head">
     <p class="eyebrow">Reviews</p>
     <h2 class="split">What Nandipur says</h2>
-    <p class="section-lede section-lede-light">★ 4.9 from 1,872 guest notes — here is why, in their own words.</p>
+    <p class="section-lede section-lede-light">★ <span data-count="4.9" data-dec="1">4.9</span> from <span data-count="1872">1,872</span> guest notes — here is why, in their own words.</p>
   </div>
-  <div class="review-grid">
-    <figure class="review-card fold-panel">
-      <blockquote>&ldquo;A wedding-first store&hellip; prices are fair and the cloth lasts. The silk and cotton sarees are worth every rupee.&rdquo;</blockquote>
-      <figcaption>Zarnika guest note</figcaption>
-    </figure>
-    <figure class="review-card fold-panel">
-      <blockquote>&ldquo;Fairly priced clothing and accessories, a calm bright store, and staff who never rush you.&rdquo;</blockquote>
-      <figcaption>Zarnika guest note</figcaption>
-    </figure>
-    <figure class="review-card fold-panel">
-      <blockquote>&ldquo;The freshest everyday styles in Nandipur — and prices that work for everyone.&rdquo;</blockquote>
-      <figcaption>Zarnika guest note</figcaption>
-    </figure>
-    <figure class="review-card fold-panel">
-      <blockquote>&ldquo;Traditional dresses and kalamkari you can judge by the touch of the cloth.&rdquo;</blockquote>
-      <figcaption>Zarnika guest note</figcaption>
-    </figure>
+  <div class="guest-rows" aria-label="Guest reviews">
+    <div class="guest-row guest-row-a"><div class="guest-track">
+      <figure class="guest-card"><blockquote>&ldquo;A wedding-first store&hellip; prices are fair and the cloth lasts. The silk and cotton sarees are worth every rupee.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+      <figure class="guest-card"><blockquote>&ldquo;Fairly priced clothing and accessories, a calm bright store, and staff who never rush you.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+      <figure class="guest-card"><blockquote>&ldquo;The freshest everyday styles in Nandipur — and prices that work for everyone.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+      <figure class="guest-card" aria-hidden="true"><blockquote>&ldquo;A wedding-first store&hellip; prices are fair and the cloth lasts. The silk and cotton sarees are worth every rupee.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+      <figure class="guest-card" aria-hidden="true"><blockquote>&ldquo;Fairly priced clothing and accessories, a calm bright store, and staff who never rush you.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+      <figure class="guest-card" aria-hidden="true"><blockquote>&ldquo;The freshest everyday styles in Nandipur — and prices that work for everyone.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+    </div></div>
+    <div class="guest-row guest-row-b"><div class="guest-track">
+      <figure class="guest-card"><blockquote>&ldquo;Traditional dresses and kalamkari you can judge by the touch of the cloth.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+      <figure class="guest-card"><blockquote>&ldquo;Every drape opened in full before it is chosen — that is why we come back.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+      <figure class="guest-card"><blockquote>&ldquo;Two wedding seasons on, the silk still looks new.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+      <figure class="guest-card" aria-hidden="true"><blockquote>&ldquo;Traditional dresses and kalamkari you can judge by the touch of the cloth.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+      <figure class="guest-card" aria-hidden="true"><blockquote>&ldquo;Every drape opened in full before it is chosen — that is why we come back.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+      <figure class="guest-card" aria-hidden="true"><blockquote>&ldquo;Two wedding seasons on, the silk still looks new.&rdquo;</blockquote><figcaption>Zarnika guest note</figcaption></figure>
+    </div></div>
   </div>
 </section>
 
-<!-- ================= VISIT ================= -->
-<section class="visit" id="visit">
-  <div class="section-head">
-    <p class="eyebrow eyebrow-dark">Visit</p>
-    <h2 class="split">Come, see<br>the drape</h2>
-  </div>
-  <div class="visit-grid">
-    <div class="visit-find fold-panel">
-      <h3>Find the store</h3>
-      <address class="visit-address">
-        ZARNIKA<br>
-        House No. 12, Ground Floor, Loomlight Avenue<br>
-        Opposite Lantern Market, Pearl District<br>
-        Weaver&rsquo;s Row, Nandipur — 500014
-      </address>
-      <p class="visit-landmark">A short walk from the Pearl Arch, at the end of Weaver&rsquo;s Row.</p>
-      <div class="visit-actions">
-        <a class="btn btn-maroon" href="https://www.google.com/maps/search/?api=1&query=Zarnika+Loomlight+Avenue+Nandipur" target="_blank" rel="noopener">Get directions</a>
-        <a class="btn btn-outline" href="tel:+915550142011">Call +91 55501 42011</a>
-      </div>
+<!-- ================= VISIT — curtain reveal ================= -->
+<section class="curtain-visit" id="visit">
+  <div class="curtain-panel curtain-left" aria-hidden="true"></div>
+  <div class="curtain-panel curtain-right" aria-hidden="true"></div>
+  <div class="curtain-inner">
+    <div class="section-head">
+      <p class="eyebrow eyebrow-dark">Visit</p>
+      <h2 class="split">Come, see<br>the drape</h2>
     </div>
-    <div class="visit-hours fold-panel">
-      <h3>Store hours</h3>
-      <p class="hours-days">Monday – Sunday</p>
-      <p class="hours-time">10:00 AM – 8:30 PM</p>
-      <p class="hours-status"><span class="status-dot js-status-dot"></span><strong class="js-status-text">Open today 10:00 AM – 8:30 PM</strong></p>
-      <p class="hours-note">Open seven days a week — walk in, and take your time with the folds.</p>
+    <div class="visit-grid2">
+      <div class="visit-find2">
+        <h3>Find the store</h3>
+        <address class="visit-address">
+          ZARNIKA<br>
+          House No. 12, Ground Floor, Loomlight Avenue<br>
+          Opposite Lantern Market, Pearl District<br>
+          Weaver&rsquo;s Row, Nandipur — 500014
+        </address>
+        <p class="visit-landmark">A short walk from the Pearl Arch, at the end of Weaver&rsquo;s Row.</p>
+        <div class="visit-actions">
+          <a class="btn btn-maroon" href="https://www.google.com/maps/search/?api=1&query=Zarnika+Loomlight+Avenue+Nandipur" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-outline" href="tel:+915550142011">Call +91 55501 42011</a>
+        </div>
+      </div>
+      <div class="visit-hours2">
+        <h3>Store hours</h3>
+        <p class="hours-days">Monday – Sunday</p>
+        <p class="hours-time">10:00 AM – 8:30 PM</p>
+        <p class="hours-status"><span class="status-dot js-status-dot"></span><strong class="js-status-text">Open today 10:00 AM – 8:30 PM</strong></p>
+        <p class="hours-note">Open seven days a week — walk in, and take your time with the folds.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -286,6 +308,7 @@
 
 <!-- ================= FOOTER ================= -->
 <footer class="foot">
+  <div class="foot-marquee" aria-hidden="true"><div class="foot-marquee-track"><span>Since 2011 · Silk &amp; Cotton · Weaver&rsquo;s Row, Nandipur · Open Daily ·&nbsp;</span><span>Since 2011 · Silk &amp; Cotton · Weaver&rsquo;s Row, Nandipur · Open Daily ·&nbsp;</span></div></div>
   <div class="foot-mark" aria-hidden="true">ZARNIKA</div>
   <div class="foot-row">
     <p class="foot-line">ZARNIKA · Since 2011 · Women&rsquo;s ethnic wear</p>
@@ -304,5 +327,6 @@
 <script src="frontend/js/vendor/SplitText.min.js"></script>
 <script src="frontend/js/landing-page.js"></script>
 <script src="frontend/js/upgrade.js"></script>
+<script src="frontend/js/tail.js?v=1"></script>
 </body>
 </html>
